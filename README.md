@@ -32,7 +32,7 @@
 ### **🔸팀명: 모빌리티 브레인**
 > 교통 관련한 두뇌를 맡는다
 
-### **🔸팀원 소개** (사진 각자 아바타 만들어오기)
+### **🔸팀원 소개**
 | [@임길진](https://github.com/LGJ0405)                      | [@박민정](https://github.com/minjeon)                       |  [@이가은](https://github.com/Leegaeune)                       | [@한 훈](https://github.com/Hoonieboogie)                       |
 |---------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | <img src="https://github.com/user-attachments/assets/e7dd2863-b577-4385-a46c-7163efb0bfe4" width="200" height="200">| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/ba73c676-9539-4742-87ba-fe2a2436f453" />| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/d9f7e063-5cc1-4804-a2ab-9a00b7d16ce4" />| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/c31f1a82-d873-4963-9140-f31487f1faa5" /> |
