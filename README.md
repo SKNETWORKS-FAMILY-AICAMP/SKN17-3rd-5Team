@@ -84,13 +84,13 @@
 | 카테고리 | 기술 스택 |
 |----------|-------------------------------------------|
 | **사용 언어** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white) |
-| **LLM** | ![OpenChat](https://img.shields.io/badge/OpenChat-FFB000?style=for-the-badge&logo=OpenAI&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-005F73?style=for-the-badge&logo=Chainlink&logoColor=white) |
+| **LLM** | ![naver-hyperclovax](https://img.shields.io/badge/naver%20hyperclovax-FFB000?style=for-the-badge&logo=naver-hyperclovax&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-005F73?style=for-the-badge&logo=Chainlink&logoColor=white) |
 | **벡터 데이터베이스** | ![Chroma](https://img.shields.io/badge/Chroma-009688?style=for-the-badge&logo=Apache&logoColor=white) |
-| **임베딩 모델** | ![nlpai-lab/KURE-v1](https://img.shields.io/badge/OpenAI%20Embeddings-8C9E90?style=for-the-badge&logo=nlpai-lab/KURE-v1&logoColor=white) |
+| **임베딩 모델** | ![nlpai-lab/KURE-v1](https://img.shields.io/badge/nlpai%20lab/KURE%20v1-8C9E90?style=for-the-badge&logo=nlpai-lab/KURE-v1&logoColor=white) |
 | **실행 환경** | ![RunPod](https://img.shields.io/badge/RunPod-FF4500?style=for-the-badge&logo=Render&logoColor=white) |
 | **모델 튜닝/학습 프레임워크** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-FFCC00?style=for-the-badge&logo=HuggingFace&logoColor=black) ![LoRA](https://img.shields.io/badge/LoRA-F76D57?style=for-the-badge&logo=HuggingFace&logoColor=white) |
 | **인터페이스(UI)** | ![Streamlit](https://img.shields.io/badge/Streamlit-20B673?style=for-the-badge&logo=Streamlit&logoColor=white) |
-| **형상 관리 및 협업** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white) ![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=Google%20Drive&logoColor=white) |
+| **형상 관리 및 협업** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white) |
 
 ----
 
@@ -101,7 +101,7 @@
 
 
 ## 🔸시스템 플로우
-
+사용자 질문 입력 > 질문 벡터화 > 유사 문서 검색 (유사도 기반) > 프롬프트 구성 > 답변 생성 > 답변 출력
 
 ---
 
@@ -125,12 +125,7 @@
 - 최종 데이터양
 - 데이터 구조
 - 최종 데이터 프레임
-
-// 
-문서 구성 및 벡터화 > 이게 RAG인가?
-
-// 
-RAG
++) 데이터 정의 (어디서 가져왔는지 출처, 양이 얼마나 되는지 어떤 형식인지 기재) , 어떤 목적으로 이 데이터를 어떤 식으로 전처리 했는지 
 
 
 | 구분        | 내용 |
@@ -141,8 +136,6 @@ RAG
 | **통합 과정** | JSON과 JSONL 데이터 형식을 모두 읽어 하나의 JSONL(`combined_data.jsonl`)로 병합|
 | **전처리 내용** | - JSON 배열 / JSONL 형식 자동 구분<br>- 빈 줄 및 파싱 불가능한 레코드 제거<br>- 필드 구조가 불일치하는 경우 필터링 -> 필드 구조 단일화(`Q`, `A`만 유지) |
 | **최종 형식** | JSONL (한 줄당 `{"Q": "...", "A": "..."}` 구조) |
-
-+) 데이터 정의 (어디서 가져왔는지 출처, 양이 얼마나 되는지 어떤 형식인지 기재) , 어떤 목적으로 이 데이터를 어떤 식으로 전처리 했는지 
 
 ---
 
@@ -164,30 +157,56 @@ RAG
 # 8️⃣ **모델 선정 이유**
 ### 🔸사용된 LLM 모델 : ```naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B```
 
-### 🔸모델 선정 기준
-- On-device에서 사용할 수 있는 크기의 모델인
-
 ### 🔸모델 선택 이유
-- On-Device 상황에서도 사용할 수 있게 작은 모델 사용
-- 그 중에서도 대답을 잘하는 모델 찾아 사용
+1. **✅성능과 효율성의 균형**
+     - 1.5B라는 비교적 작은 파라미터 크기는 **빠른 추론 속도**를 보장 > 운전 중 긴급 질문에 실시간으로 응답해야 하는 A.D.A 서비스에 필수적 요건
+
+<br>
+
+2. **✅한국어 특화 성능**
+    - 네이버가 개발한 **한국어 특화 모델**로써, 구어체 질문이나 운전 전문 용어에 대한 이해도 높음
+    
+<br>
+
+3. **✅On-device 구동 가능성 및 확장성**
+    - 모델 경량성은 클라우드 환경에서 운영 비용을 절감할 뿐만 아니라 네트워크 연결 없이도 작동하는 **On-Device AI**로의 확장 가능성 
 
 ---
 
 # 9️⃣ **테스트 계획 및 결과 보고서**
 
+평가 항목
+- 정확성 : 답변이 사실에 근거하는가? DB에서 검색된 정보를 충실히 반영하는가?
+- 견고성 : 사소한 오류에도 질문 의도를 파악하는가? 서비스 범위를 벗어난 질문에 대해 적절히 거절하는가?
+- 응답 속도 : 5초 이내로 답변이 생성되는가?
+- 사용성 : 기능 사용법이 명확한가? 대화 흐름이 자연스러운가?
 
+|평가 항목|결과|분석 및 비고|
+|--------|----|-------------|
+|정확성| % |DB에 없는 질문이나 매우 지엽적인 질문에 대해서는 다소 일반적인 답변을 생성하는 경향을 보임|
+|견고성| 양호 | 오타나 간단한 비문을 잘 처리했으나 서비스 범위를 벗어난 질문에 대해서는 명확히 답변하지 못함|
+|응답 속도|평균 몇 초|RunPod 환경에서 목표했던 5초 이내의 응답 속도 만족|
+|사용성|긍정적|UI가 직관적이고 사용이 편리하다는 공통된 의견, 대화 기록이 남아 이전 질문을 참고하기 좋다는 피드백|
 
 ---
 
 # 🔟 **진행 과정 중 프로젝트 개선 노력**
 
 ### 🔸개선 전 문제점
+- Vector DB에서 유사도 기반의 문서를 명확하게 검색하지 못하거나 그 문서로 대화형 답변을 잘 생성하지 못하는 문제 발생
+- 매 질문을 독립적인 것으로 인식하여 "그래서?" 와 같은 후속 질문을 이해하지 못함
+- 프롬프트 메세지가 응답에 그대로 출력됨
 
-#### 1. 노력
-프롬프트 개선
-#### 2. 노력
-이전 대화도 기억해내기 위해 메모리 
-#### 3. 노력
+#### 1. 프롬프트 엔지니어링
+LLM이 DB에서 검색된 정보를 그대로 나열하거나 질문의 핵심을 벗어난 일반적인 답변 생성 문제 <br>
+프롬프트 템플릿에 역할 부여, 답변 형식 지정, 어조 설정 등 구체적인 지침 추가로 LLM이 일관성 있고 전문적인 페르소나를 유지하며 답변을 더 가공하여 제공하도록 프롬프트 엔지니어링 
+
+#### 2. 메모리 기능 추가 
+이전 대화도 기억해내기 위해 메모리
+
+#### 3. Chunking 전략 수정
+초기에는 문서를 고정된 크기로 분할 > 정보의 의미 단위가 깨지는 문제 발생 <br>
+```RecursiveCharacterTextSplitter```를 사용하여 문단의 의미가 최대한 유지되도록 청크를 분할하고 청크 간의 중첩 영역을 설정하여 문맥이 끊어지지 않도록 개선
 
 ---
 
@@ -201,14 +220,24 @@ RAG
 # 📒 **결과 정리 및 향후 계획**
 
 ### 🔸프로젝트 결과 요약
+운전 중 발생하는 다양한 돌발 상황에 대해 실시간으로 대처 방안을 제공하는 LLM 기반의 질의 응답 시스템인 **A.D.A**를 성공적으로 개발
+
+- RAG 기반의 신뢰성 높은 답변 생성
+- 프롬프트 엔지니어링과 대화 메모리 기능 추가로 사용자 친화적인 대화 인터페이스 구축
+- 실제 법령 데이터를 근거로 답변 기능  
+
 
 ### 🔸기대 효과
 
+- **2차 사고 예방** : 사고 발생 시 당황하지 않고 신속하고 정확한 초기 대응을 하도록 유도하여 2차 사고 발생률을 낮추는 데 기여
+- **정보 접근성 향상** : 기존의 두꺼운 차량 매뉴얼이나 인터넷 검색의 번거로움을 해소하고 직관적인 인터페이스로 누구나 쉽게 필요한 정보에 접근 가능 
+
 
 ### 🔸향후 개선 방향
-- 만약에 STT 를 못 한다면) STT + TTS 기술을 접목해 운전자가 주행 중에 음성으로 질문하고 음성으로 답변하는 기술 탑재
-- 응답 생성 시간 단축
-- 사용자 질문 라우팅 시도
+- **핸즈프리** : STT + TTS 기술을 접목해 운전자가 주행 중에 음성으로 질문하고 음성으로 답변하는 기술 탑재
+- **응답 생성 시간 단축** : 실시간으로 상담 하기 위한 처리 경량화 및 속도 개선
+- **사용자 질문 라우팅 시도** : ??
+- **멀티모달 기능 추가** : 계기판의 경고등 사진 등을 찍어 전송하면 이미지를 분석해 어떤 문제인지 알려주고 해결책을 제시하는 비전 기능 추가 가능
 
 
 ----
@@ -218,6 +247,6 @@ RAG
 |이름|회고록|
 |--------|--------|
 |**임길진**| 왜 |
-|**박민정**| 안 |
+|**박민정**| 힘들다... 힘들어요.. |
 |**이가은**| 되 |
 |**한 훈**| 냐 |
