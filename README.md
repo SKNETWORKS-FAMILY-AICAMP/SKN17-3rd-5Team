@@ -28,10 +28,10 @@
 ---
 
 # 0️⃣ **팀 소개**
-## **🔸팀명: 모빌리티 브레인**
-- 교통 관련한 두뇌를 맡는다는 의미
+### **🔸팀명: 모빌리티 브레인**
+> 교통 관련한 두뇌를 맡는다
 
-## **🔸팀원 소개** (사진 각자 아바타 만들어오기)
+### **🔸팀원 소개** (사진 각자 아바타 만들어오기)
 | [@임길진](https://github.com/LGJ0405)                      | [@박민정](https://github.com/minjeon)                       |  [@이가은](https://github.com/Leegaeune)                       | [@한 훈](https://github.com/Hoonieboogie)                       |
 |---------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | <img src="https://github.com/user-attachments/assets/e7dd2863-b577-4385-a46c-7163efb0bfe4" width="200" height="200">         | <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f58448d7-9ece-412a-bb50-5c963a6af3df" />| <img src="https://github.com/user-attachments/assets/c80b5b8d-4a42-4ed1-950f-b0ea5b078f51" width="200" height="200">             |  <img src="https://github.com/user-attachments/assets/7fdacbe3-b568-4c42-8758-d189ec522bc3" width="200" height="200" />|
