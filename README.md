@@ -107,12 +107,13 @@
 
 # 4️⃣ **WBS**
 
-
-
+<img width="1425" height="660" alt="image" src="https://github.com/user-attachments/assets/c2f2f9eb-3400-4687-b279-05f9e5dd4da1" />
 
 ---
 
 # 5️⃣ **요구사항 명세서**
+
+<img width="1550" height="400" alt="image" src="https://github.com/user-attachments/assets/0f886b44-3392-4a06-9f70-99199b8d4ade" />
 
 
 ---
