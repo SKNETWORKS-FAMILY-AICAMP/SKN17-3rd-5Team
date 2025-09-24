@@ -42,10 +42,10 @@
 ---
 
 # 1️⃣ **프로젝트 개요**
-## **🔸프로젝트 명: 🚗초보 운전자 AI 도우미🚗**
+## **🔸프로젝트 명: 🚗A.D.A(AI Driving Assistant)🚗**
 ## **🔸프로젝트 소개**
 
-**운전자 AI 도우미**는 운전자들이 주행 중 맞닥뜨릴 수 있는 다양한 돌발 상황에 대해 실시간으로 법령을 근거로 대처법, 가이드, 안전 수칙을 제공하는 LLM 기반 챗봇입니다. 음성이나 텍스트로 질문하면 즉시 답변을 제공하여 운전자 스스로 빠르고 정확하게 대응할 수 있도록 돕습니다. 
+**A.D.A**는 운전자들이 주행 중 맞닥뜨릴 수 있는 다양한 돌발 상황에 대해 실시간으로 대처법, 가이드, 안전 수칙을 제공하는 LLM 기반 챗봇입니다. 음성이나 텍스트로 질문하면 즉시 답변을 제공하여 운전자 스스로 빠르고 정확하게 대응할 수 있도록 돕습니다. 
 
 ## **🔸프로젝트 필요성**
 
@@ -89,7 +89,7 @@
 | **임베딩 모델** | ![nlpai-lab/KURE-v1](https://img.shields.io/badge/OpenAI%20Embeddings-8C9E90?style=for-the-badge&logo=nlpai-lab/KURE-v1&logoColor=white) |
 | **실행 환경** | ![RunPod](https://img.shields.io/badge/RunPod-FF4500?style=for-the-badge&logo=Render&logoColor=white) |
 | **모델 튜닝/학습 프레임워크** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-FFCC00?style=for-the-badge&logo=HuggingFace&logoColor=black) ![LoRA](https://img.shields.io/badge/LoRA-F76D57?style=for-the-badge&logo=HuggingFace&logoColor=white) |
-| **인터페이스(UI)** | ![Gradio](https://img.shields.io/badge/Gradio-20B673?style=for-the-badge&logo=Gradio&logoColor=white) |
+| **인터페이스(UI)** | ![Streamlit](https://img.shields.io/badge/Streamlit-20B673?style=for-the-badge&logo=Streamlit&logoColor=white) |
 | **형상 관리 및 협업** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white) ![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=Google%20Drive&logoColor=white) |
 
 ----
@@ -147,16 +147,28 @@ RAG
 
 # 7️⃣ **DB 연동 구현 코드**
 
+- DB 연동 구현 코드 파일 하이퍼링크 달기 
+- **[📁임베딩 모델 (github)](https://github.com/nlpai-lab/KURE?tab=readme-ov-file)**
+- 벡터 DB: ```Chroma```
+
+### ✅ DB 구축 과정 상세 요약
+- **데이터 변환** : ```jsonl``` 형식의 질의응답 데이터를 ```Langchain```의 ```Document``` 객체로 변환
+- **자동 청킹** : ```RecursiveCharacterTextSplitter```를 사용해 문서 분할
+- **벡터화** : 한국어 특화 임베딩 모델인 ```nlpai-lab/KURE-v1```을 사용해 ```Document```를 고차원 벡터로 변환
+- **DB 저장** : 벡터화된 데이터를 ```Chroma``` Vector DB에 저장하여 RAG 시스템에서 활용할 수 있도록 준비
 
 
 ---
 
 # 8️⃣ **모델 선정 이유**
-### 🔸사용된 LLM 모델 : ``` ```
+### 🔸사용된 LLM 모델 : ```naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B```
 
 ### 🔸모델 선정 기준
+- On-device에서 사용할 수 있는 크기의 모델인
 
 ### 🔸모델 선택 이유
+- On-Device 상황에서도 사용할 수 있게 작은 모델 사용
+- 그 중에서도 대답을 잘하는 모델 찾아 사용
 
 ---
 
@@ -171,7 +183,9 @@ RAG
 ### 🔸개선 전 문제점
 
 #### 1. 노력
+프롬프트 개선
 #### 2. 노력
+이전 대화도 기억해내기 위해 메모리 
 #### 3. 노력
 
 ---
