@@ -45,7 +45,7 @@
 ## **🔸프로젝트 명: 🚗A.D.A(AI Driving Assistant)🚗**
 ## **🔸프로젝트 소개**
 
-**A.D.A**는 운전자들이 주행 중 맞닥뜨릴 수 있는 다양한 돌발 상황에 대해 실시간으로 대처법, 가이드, 안전 수칙을 제공하는 LLM 기반 챗봇입니다. 음성이나 텍스트로 질문하면 즉시 답변을 제공하여 운전자 스스로 빠르고 정확하게 대응할 수 있도록 돕습니다. 
+**A.D.A(AI Driving Assistant)** 는 운전자들이 주행 중 맞닥뜨릴 수 있는 다양한 돌발 상황에 대해 실시간으로 대처법, 가이드, 안전 수칙을 제공하는 LLM 기반 챗봇입니다. 음성이나 텍스트로 질문하면 즉시 답변을 제공하여 운전자 스스로 빠르고 정확하게 대응할 수 있도록 돕습니다. 
 
 ## **🔸프로젝트 필요성**
 
@@ -87,7 +87,7 @@
 | **LLM** | ![naver-hyperclovax](https://img.shields.io/badge/naver%20hyperclovax-FFB000?style=for-the-badge&logo=naver-hyperclovax&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-005F73?style=for-the-badge&logo=Chainlink&logoColor=white) |
 | **벡터 데이터베이스** | ![Chroma](https://img.shields.io/badge/Chroma-009688?style=for-the-badge&logo=Apache&logoColor=white) |
 | **임베딩 모델** | ![nlpai-lab/KURE-v1](https://img.shields.io/badge/nlpai%20lab/KURE%20v1-8C9E90?style=for-the-badge&logo=nlpai-lab/KURE-v1&logoColor=white) |
-| **실행 환경** | ![RunPod](https://img.shields.io/badge/RunPod-FF4500?style=for-the-badge&logo=Render&logoColor=white) |
+| **실행 환경** | ![RunPod](https://img.shields.io/badge/RunPod-FF4500?style=for-the-badge&logo=Render&logoColor=white) ![Local](https://img.shields.io/badge/Local-FF4500?style=for-the-badge&logo=Local&logoColor=white) |
 | **모델 튜닝/학습 프레임워크** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-FFCC00?style=for-the-badge&logo=HuggingFace&logoColor=black) ![LoRA](https://img.shields.io/badge/LoRA-F76D57?style=for-the-badge&logo=HuggingFace&logoColor=white) |
 | **인터페이스(UI)** | ![Streamlit](https://img.shields.io/badge/Streamlit-20B673?style=for-the-badge&logo=Streamlit&logoColor=white) |
 | **형상 관리 및 협업** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white) |
@@ -286,7 +286,10 @@ GPT가 생성한 사례에 대한 답변은 실제 출처 링크를 확인하고
 ### 🔸테스트 결과
 |평가 항목|결과|분석 및 비고|
 |--------|----|-------------|
-
+|평균 점수|4점|목표치를 달성함|
+|답변 성공률|88.89%||
+|응답 일관성|우수|같은 질문에도 구조, 논리 유지|
+|모델 안정성|우수|질문 다양성에도 구조 안정적으로 유지| 
 
 
 ### 🔸테스트 결론
@@ -319,11 +322,8 @@ LLM이 DB에서 검색된 정보를 그대로 나열하거나 질문의 핵심�
 
 #### 2. 메모리 기능 추가 
 후속 질문이나 대명사를 이해하지 못해 대화 단절 문제 <br>
-이전 대화도 기억해내기 위해 메모리
+이전 대화도 기억해내기 위해 메모리 기능 추가 시도
 
-#### 3. Chunking 전략 수정
-초기에는 문서를 고정된 크기로 분할 > 정보의 의미 단위가 깨지는 문제 발생 <br>
-```RecursiveCharacterTextSplitter```를 사용하여 문단의 의미가 최대한 유지되도록 청크를 분할하고 청크 간의 중첩 영역을 설정하여 문맥이 끊어지지 않도록 개선
 
 ---
 
