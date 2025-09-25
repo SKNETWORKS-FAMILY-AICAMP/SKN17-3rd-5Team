@@ -246,7 +246,7 @@ GPT가 생성한 사례에 대한 답변은 실제 출처 링크를 확인하고
 - **데이터 변환** : ```jsonl``` 형식의 질의응답 데이터를 ```Langchain```의 ```Document``` 객체로 변환
 - **자동 청킹** : ```RecursiveCharacterTextSplitter```를 사용해 문서 분할
 - **벡터화** : 한국어 특화 임베딩 모델인 ```nlpai-lab/KURE-v1```을 사용해 ```Document```를 고차원 벡터로 변환
-- **DB 저장** : 벡터화된 데이터를 ```Chroma``` Vector DB에 저장하여 RAG 시스템에서 활용할 수 있도록 준비
+- **DB 저장** : 대규모의 데이터가 아니기 때문에 벡터화된 데이터를 ```Chroma``` Vector DB에 저장하여 RAG 시스템에서 활용할 수 있도록 준비
 
 
 ---
