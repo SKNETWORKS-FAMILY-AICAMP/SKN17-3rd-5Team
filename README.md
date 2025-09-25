@@ -97,13 +97,17 @@
 # 3️⃣ **시스템 아키텍처**
 
 ## 🔸시스템 아키텍처
-<img width="2040" height="1112" alt="image" src="https://github.com/user-attachments/assets/912d7c35-a66c-416d-bef5-4adf025f3121" />
+
+<img width="2030" height="1284" alt="image" src="https://github.com/user-attachments/assets/5dd8baff-07c8-47a6-b6c3-824c74b2cfc9" />
+
+
+
 
 
 
 
 ## 🔸시스템 플로우
-사용자 질문 입력 > 질문 벡터화 > 유사 문서 검색 (유사도 기반) > 프롬프트 구성 > 답변 생성 > 답변 출력
+
 본 시스템은 사용자의 질문에 대해 **사례 데이터 기반으로 답변을 생성**하고,  
 필요시 그 답변에 연관된 **법규 조항을 함께 제시**하는 AI 아키텍처입니다.
 
@@ -117,7 +121,7 @@
 
 2) 사례 및 법규 데이터 전처리
 - 실제 운전 사례 및 상황별 Q&A 데이터를 수집하여 임베딩  
-- 교통 법규 문서를 별도로 벡터화하여 **VectorDB (ChromaDB)**에 저장  
+- 교통 법규 문서를 별도로 벡터화하여 **VectorDB (ChromaDB)** 에 저장  
 - 두 데이터는 각각 **답변 생성용(사례)** / **근거 제시용(법규)** 으로 활용
 
 
