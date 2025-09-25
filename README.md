@@ -98,7 +98,8 @@
 
 ## 🔸시스템 아키텍처
 
-<img width="2030" height="1284" alt="image" src="https://github.com/user-attachments/assets/5dd8baff-07c8-47a6-b6c3-824c74b2cfc9" />
+<img width="1888" height="1248" alt="image" src="https://github.com/user-attachments/assets/50586735-9ef6-496b-b94b-f85e5a13454e" />
+
 
 
 ## 🔸 시스템 플로우
