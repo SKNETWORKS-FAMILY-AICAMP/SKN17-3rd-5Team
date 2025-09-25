@@ -97,6 +97,8 @@
 # 3️⃣ **시스템 아키텍처**
 
 ## 🔸시스템 아키텍처
+<img width="2040" height="1112" alt="image" src="https://github.com/user-attachments/assets/912d7c35-a66c-416d-bef5-4adf025f3121" />
+
 
 
 
