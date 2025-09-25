@@ -148,7 +148,8 @@
 
 # 5️⃣ **요구사항 명세서**
 
-<img width="1550" height="400" alt="image" src="https://github.com/user-attachments/assets/0f886b44-3392-4a06-9f70-99199b8d4ade" />
+<img width="1293" height="341" alt="image" src="https://github.com/user-attachments/assets/940f5da5-aa5e-46d6-b3be-a6942cf69aa9" />
+
 
 
 ---
