@@ -342,6 +342,7 @@ LLM이 DB에서 검색된 정보를 그대로 나열하거나 질문의 핵심�
 
 <img width="1778" height="944" alt="image" src="https://github.com/user-attachments/assets/a59c5c9f-275d-4245-af98-fb19faeafb0f" /> <br>
 <img width="1801" height="957" alt="image" src="https://github.com/user-attachments/assets/4992fc19-12b9-438e-a34e-fdbfff14ad0e" />
+<img width="1237" height="416" alt="image" src="https://github.com/user-attachments/assets/54c913e8-4728-416e-a4b6-61fff248fff5" />
 
 
 
