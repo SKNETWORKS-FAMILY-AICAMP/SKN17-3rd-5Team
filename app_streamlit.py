@@ -3,6 +3,7 @@ import streamlit as st
 from rag_llm_recent import get_rag_answer
 import random
 from collections import deque
+from law_rag import generate_answer_with_retrieved_docs
 from PIL import Image
 
 def run_driver_assistant_app():
@@ -208,7 +209,14 @@ def run_driver_assistant_app():
                     st.session_state.recent_questions.appendleft(user_input)
                 st.session_state.question_count += 1
                 st.rerun()
-
+            # AI 응답
+            if st.session_state.chat_history and st.session_state.chat_history[-1][0] == "user":
+                last_user_input = st.session_state.chat_history[-1][1]
+                with st.spinner("답변을 찾고 있어요..."):
+                    answer = generate_answer_with_retrieved_docs(last_user_input)
+                    st.session_state.chat_history.append(("assistant", answer))
+                    st.rerun()
+                    
     # 🚀 최근 질문 목록 표시
         with side_col:
             st.subheader("최근 질문 목록")
@@ -226,4 +234,5 @@ def run_driver_assistant_app():
 # 실행
 if __name__ == "__main__":
     run_driver_assistant_app()
+
 
