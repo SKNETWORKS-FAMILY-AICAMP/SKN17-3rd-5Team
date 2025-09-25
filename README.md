@@ -284,7 +284,7 @@ GPT가 생성한 사례에 대한 답변은 실제 출처 링크를 확인하고
 
 # 9️⃣ **테스트 계획 및 결과 보고서**
 
-[**🗂️테스트 계획 및 결과 보고서**](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN17-3rd-5Team/blob/main/SKN17-3rd-5Team-%ED%85%8C%EC%8A%A4%ED%8A%B8_%EA%B3%84%ED%9A%8D_%EB%B0%8F_%EA%B2%B0%EA%B3%BC_%EB%B3%B4%EA%B3%A0%EC%84%9C%20(2).pdf)
+[**🗂️테스트 계획 및 결과 보고서**](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN17-3rd-5Team/blob/main/SKN17-3rd-5Team_%ED%85%8C%EC%8A%A4%ED%8A%B8_%EA%B3%84%ED%9A%8D_%EB%B0%8F_%EA%B2%B0%EA%B3%BC_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)
 
 ### 🔸평가 방식
 - 총 10개 질문(일상 주행, 돌발 상황, 법규/상식), 5개의 항목, 5점 만점 정성 평가로 진행 
