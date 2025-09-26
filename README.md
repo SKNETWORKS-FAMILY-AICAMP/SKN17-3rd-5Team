@@ -87,7 +87,8 @@
 | 카테고리 | 기술 스택 |
 |----------|-------------------------------------------|
 | **사용 언어** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white) |
-| **LLM** | ![naver-hyperclovax](https://img.shields.io/badge/naver%20hyperclovax-FFB000?style=for-the-badge&logo=naver-hyperclovax&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-005F73?style=for-the-badge&logo=Chainlink&logoColor=white) |
+| **LLM** | ![naver-hyperclovax](https://img.shields.io/badge/naver%20hyperclovax-FFB000?style=for-the-badge&logo=naver-hyperclovax&logoColor=white) |
+| **프레임워크** |  ![LangChain](https://img.shields.io/badge/LangChain-005F73?style=for-the-badge&logo=Chainlink&logoColor=white) |
 | **벡터 데이터베이스** | ![Chroma](https://img.shields.io/badge/Chroma-009688?style=for-the-badge&logo=Apache&logoColor=white) |
 | **임베딩 모델** | ![nlpai-lab/KURE-v1](https://img.shields.io/badge/nlpai%20lab/KURE%20v1-8C9E90?style=for-the-badge&logo=nlpai-lab/KURE-v1&logoColor=white) |
 | **실행 환경** | ![RunPod](https://img.shields.io/badge/RunPod-FF4500?style=for-the-badge&logo=Render&logoColor=white) ![Local](https://img.shields.io/badge/Local-FF4500?style=for-the-badge&logo=Local&logoColor=white) |
