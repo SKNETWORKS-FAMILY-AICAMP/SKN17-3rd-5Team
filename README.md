@@ -102,7 +102,7 @@
 
 ## 🔸시스템 아키텍처
 
-<img width="1888" height="1248" alt="image" src="https://github.com/user-attachments/assets/50586735-9ef6-496b-b94b-f85e5a13454e" />
+<img width="1888" height="1248" alt="image" src="./image/System_Architecture.png" />
 
 
 
