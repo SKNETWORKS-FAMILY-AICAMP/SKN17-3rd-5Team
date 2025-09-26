@@ -35,7 +35,7 @@
 ### **🔸팀원 소개**
 | [@임길진](https://github.com/LGJ0405)                      | [@박민정](https://github.com/minjeon)                       |  [@이가은](https://github.com/Leegaeune)                       | [@한 훈](https://github.com/Hoonieboogie)                       |
 |---------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/dc864318-18e5-46c2-a11f-b0207c1eed96" />| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/ba73c676-9539-4742-87ba-fe2a2436f453" />| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/d9f7e063-5cc1-4804-a2ab-9a00b7d16ce4" />| <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/c31f1a82-d873-4963-9140-f31487f1faa5" /> |
+| ![image2](https://github.com/user-attachments/assets/8cd8826f-16ab-4e4f-b12c-9cd1acb7fadd) | ![image3](https://github.com/user-attachments/assets/2eaa1afa-88d4-4297-b9a1-5b03f7269e3d) | ![image1](https://github.com/user-attachments/assets/37240268-067b-4391-8e6c-481517364a9f) | ![image0](https://github.com/user-attachments/assets/f51bbd34-a5a9-4358-8490-6d6db4ffff86) |
 
 
 
