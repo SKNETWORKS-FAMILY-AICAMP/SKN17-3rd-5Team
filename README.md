@@ -147,14 +147,14 @@
 
 # 4️⃣ **WBS**
 
-<img width="1453" height="691" alt="image" src="https://github.com/user-attachments/assets/ddec908c-0fe2-418a-809d-e64c4098254e" />
+<img width="1453" height="691" alt="image" src="./image/WBS.png" />
 
 
 ---
 
 # 5️⃣ **요구사항 명세서**
 
-<img width="1293" height="341" alt="image" src="https://github.com/user-attachments/assets/940f5da5-aa5e-46d6-b3be-a6942cf69aa9" />
+<img width="1293" height="341" alt="image" src="./image/요구사항명세서.png" />
 
 
 
@@ -205,7 +205,7 @@ GPT가 생성한 사례에 대한 답변은 실제 출처 링크를 확인하고
     <th>데이터 구조</th>
     <td>
       <img width="392" height="445" alt="데이터 구조 예시"
-           src="https://github.com/user-attachments/assets/9c222f50-e068-4eb0-a3e1-6875b6556689" />
+           src="./image/법령데이터구조.png" />
     </td>
   </tr>
   <tr>
@@ -292,7 +292,7 @@ GPT가 생성한 사례에 대한 답변은 실제 출처 링크를 확인하고
 
 
 ### 🔸평가 기준 항목
-<img width="742" height="310" alt="image" src="https://github.com/user-attachments/assets/e2bee7c3-f7ee-4a71-89c6-7faf295c12d4" />
+<img width="742" height="310" alt="image" src="./image/평가항목기준.png">
 
 
 
@@ -350,9 +350,9 @@ GPT가 생성한 사례에 대한 답변은 실제 출처 링크를 확인하고
 
 # 📜 **수행 결과**
 
-<img width="1778" height="944" alt="image" src="https://github.com/user-attachments/assets/a59c5c9f-275d-4245-af98-fb19faeafb0f" /> <br>
-<img width="1801" height="957" alt="image" src="https://github.com/user-attachments/assets/4992fc19-12b9-438e-a34e-fdbfff14ad0e" />
-<img width="1237" height="416" alt="image" src="https://github.com/user-attachments/assets/54c913e8-4728-416e-a4b6-61fff248fff5" />
+<img width="1778" height="944" alt="image" src="./image/시연1.png" /> <br>
+<img width="1801" height="957" alt="image" src="./image/시연2.png" />
+<img width="1237" height="416" alt="image" src="./image/시연3.png" />
 
 
 
