@@ -159,7 +159,7 @@ def generate_answer_with_retrieved_docs(question):
     context = "\n".join([f"문서: {content}" for i, content in enumerate(Content_list)])
     print(context)
     # 프롬프트 작성 (문서 내용을 포함하되 출력에는 포함되지 않게 함)
-    prompt = f"""다음 질문에 대해 관련 법령을 참고하여 100자 이내로 답변을 생성하라:\n{context}\n질문: {question}\n답변:"""
+    prompt = f"""다음 질문에 대해 관련 법령을 참고하여 100자 이내로 답변을 생성하라 법령은 제n조_n항_n~n호 로 구성되어 있다:\n{context}\n질문: {question}\n답변:"""
 
     # 토큰화
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
@@ -177,10 +177,7 @@ def generate_answer_with_retrieved_docs(question):
     # 결과 디코딩
     answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
     
-    # 문서 내용은 출력에 포함되지 않도록 수정
-    answer = answer.replace(context, "").strip()
-    print(answer)
-    return answer
+    return answer.split('답변: ')[-1]
 
 if __name__ == "__main__":
     while True:
